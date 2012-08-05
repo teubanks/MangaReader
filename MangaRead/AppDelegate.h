@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Parser.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 

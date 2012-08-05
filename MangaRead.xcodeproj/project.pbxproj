@@ -18,6 +18,9 @@
 		F0A5783515CF2AB300780115 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A5781215CF2AAA00780115 /* Cocoa.framework */; };
 		F0A5783D15CF2AB300780115 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0A5783B15CF2AB300780115 /* InfoPlist.strings */; };
 		F0A5784015CF2AB300780115 /* MangaReadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5783F15CF2AB300780115 /* MangaReadTests.m */; };
+		F0A5784B15CF2B8800780115 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5784A15CF2B8800780115 /* Parser.m */; };
+		F0A5785015CF2C0E00780115 /* DataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5784F15CF2C0E00780115 /* DataFetcher.m */; };
+		F0A5785315CF2EE600780115 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A5781715CF2AAA00780115 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		F0A5783C15CF2AB300780115 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F0A5783E15CF2AB300780115 /* MangaReadTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MangaReadTests.h; sourceTree = "<group>"; };
 		F0A5783F15CF2AB300780115 /* MangaReadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MangaReadTests.m; sourceTree = "<group>"; };
+		F0A5784915CF2B8800780115 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Parser.h; path = MangaRead/MangaEden/Parser.h; sourceTree = "<group>"; };
+		F0A5784A15CF2B8800780115 /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Parser.m; path = MangaRead/MangaEden/Parser.m; sourceTree = "<group>"; };
+		F0A5784E15CF2C0E00780115 /* DataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataFetcher.h; path = MangaEden/DataFetcher.h; sourceTree = "<group>"; };
+		F0A5784F15CF2C0E00780115 /* DataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataFetcher.m; path = MangaEden/DataFetcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0A5785315CF2EE600780115 /* Foundation.framework in Frameworks */,
 				F0A5781315CF2AAA00780115 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +124,7 @@
 		F0A5781815CF2AAA00780115 /* MangaRead */ = {
 			isa = PBXGroup;
 			children = (
+				F0A5784D15CF2BB300780115 /* Feeds */,
 				F0A5782415CF2AAC00780115 /* AppDelegate.h */,
 				F0A5782515CF2AAC00780115 /* AppDelegate.m */,
 				F0A5782715CF2AAD00780115 /* MainMenu.xib */,
@@ -154,6 +163,26 @@
 				F0A5783B15CF2AB300780115 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0A5784C15CF2B9400780115 /* MangaEden */ = {
+			isa = PBXGroup;
+			children = (
+				F0A5784915CF2B8800780115 /* Parser.h */,
+				F0A5784A15CF2B8800780115 /* Parser.m */,
+				F0A5784E15CF2C0E00780115 /* DataFetcher.h */,
+				F0A5784F15CF2C0E00780115 /* DataFetcher.m */,
+			);
+			name = MangaEden;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F0A5784D15CF2BB300780115 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				F0A5784C15CF2B9400780115 /* MangaEden */,
+			);
+			name = Feeds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +296,8 @@
 				F0A5781F15CF2AAB00780115 /* main.m in Sources */,
 				F0A5782615CF2AAC00780115 /* AppDelegate.m in Sources */,
 				F0A5782C15CF2AAE00780115 /* MangaRead.xcdatamodeld in Sources */,
+				F0A5784B15CF2B8800780115 /* Parser.m in Sources */,
+				F0A5785015CF2C0E00780115 /* DataFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

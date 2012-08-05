@@ -16,7 +16,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-  // Insert code here to initialize your application
+  Parser *mangaEdenParser = [[Parser alloc] init];
+  [mangaEdenParser parseMangaList];
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "void.MangaRead" in the user's Application Support directory.
