@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0A5781315CF2AAA00780115 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A5781215CF2AAA00780115 /* Cocoa.framework */; };
+		F0A5781D15CF2AAB00780115 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0A5781B15CF2AAB00780115 /* InfoPlist.strings */; };
+		F0A5781F15CF2AAB00780115 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5781E15CF2AAB00780115 /* main.m */; };
+		F0A5782315CF2AAC00780115 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F0A5782115CF2AAC00780115 /* Credits.rtf */; };
+		F0A5782615CF2AAC00780115 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5782515CF2AAC00780115 /* AppDelegate.m */; };
+		F0A5782915CF2AAD00780115 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A5782715CF2AAD00780115 /* MainMenu.xib */; };
+		F0A5782C15CF2AAE00780115 /* MangaRead.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0A5782A15CF2AAE00780115 /* MangaRead.xcdatamodeld */; };
+		F0A5783415CF2AB300780115 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A5783315CF2AB300780115 /* SenTestingKit.framework */; };
+		F0A5783515CF2AB300780115 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A5781215CF2AAA00780115 /* Cocoa.framework */; };
+		F0A5783D15CF2AB300780115 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0A5783B15CF2AB300780115 /* InfoPlist.strings */; };
+		F0A5784015CF2AB300780115 /* MangaReadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5783F15CF2AB300780115 /* MangaReadTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0A5783615CF2AB300780115 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0A5780515CF2AA800780115 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0A5780D15CF2AA800780115;
+			remoteInfo = MangaRead;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F0A5780E15CF2AA900780115 /* MangaRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangaRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A5781215CF2AAA00780115 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F0A5781515CF2AAA00780115 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F0A5781615CF2AAA00780115 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F0A5781715CF2AAA00780115 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F0A5781A15CF2AAB00780115 /* MangaRead-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MangaRead-Info.plist"; sourceTree = "<group>"; };
+		F0A5781C15CF2AAB00780115 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F0A5781E15CF2AAB00780115 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0A5782015CF2AAC00780115 /* MangaRead-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MangaRead-Prefix.pch"; sourceTree = "<group>"; };
+		F0A5782215CF2AAC00780115 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F0A5782415CF2AAC00780115 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F0A5782515CF2AAC00780115 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F0A5782815CF2AAD00780115 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F0A5782B15CF2AAE00780115 /* MangaRead.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MangaRead.xcdatamodel; sourceTree = "<group>"; };
+		F0A5783215CF2AB300780115 /* MangaReadTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangaReadTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A5783315CF2AB300780115 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F0A5783A15CF2AB300780115 /* MangaReadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MangaReadTests-Info.plist"; sourceTree = "<group>"; };
+		F0A5783C15CF2AB300780115 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F0A5783E15CF2AB300780115 /* MangaReadTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MangaReadTests.h; sourceTree = "<group>"; };
+		F0A5783F15CF2AB300780115 /* MangaReadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MangaReadTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0A5780B15CF2AA800780115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A5781315CF2AAA00780115 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A5782E15CF2AB300780115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A5783415CF2AB300780115 /* SenTestingKit.framework in Frameworks */,
+				F0A5783515CF2AB300780115 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0A5780315CF2AA800780115 = {
+			isa = PBXGroup;
+			children = (
+				F0A5781815CF2AAA00780115 /* MangaRead */,
+				F0A5783815CF2AB300780115 /* MangaReadTests */,
+				F0A5781115CF2AA900780115 /* Frameworks */,
+				F0A5780F15CF2AA900780115 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0A5780F15CF2AA900780115 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0A5780E15CF2AA900780115 /* MangaRead.app */,
+				F0A5783215CF2AB300780115 /* MangaReadTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0A5781115CF2AA900780115 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0A5781215CF2AAA00780115 /* Cocoa.framework */,
+				F0A5783315CF2AB300780115 /* SenTestingKit.framework */,
+				F0A5781415CF2AAA00780115 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0A5781415CF2AAA00780115 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0A5781515CF2AAA00780115 /* AppKit.framework */,
+				F0A5781615CF2AAA00780115 /* CoreData.framework */,
+				F0A5781715CF2AAA00780115 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F0A5781815CF2AAA00780115 /* MangaRead */ = {
+			isa = PBXGroup;
+			children = (
+				F0A5782415CF2AAC00780115 /* AppDelegate.h */,
+				F0A5782515CF2AAC00780115 /* AppDelegate.m */,
+				F0A5782715CF2AAD00780115 /* MainMenu.xib */,
+				F0A5782A15CF2AAE00780115 /* MangaRead.xcdatamodeld */,
+				F0A5781915CF2AAA00780115 /* Supporting Files */,
+			);
+			path = MangaRead;
+			sourceTree = "<group>";
+		};
+		F0A5781915CF2AAA00780115 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0A5781A15CF2AAB00780115 /* MangaRead-Info.plist */,
+				F0A5781B15CF2AAB00780115 /* InfoPlist.strings */,
+				F0A5781E15CF2AAB00780115 /* main.m */,
+				F0A5782015CF2AAC00780115 /* MangaRead-Prefix.pch */,
+				F0A5782115CF2AAC00780115 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0A5783815CF2AB300780115 /* MangaReadTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0A5783E15CF2AB300780115 /* MangaReadTests.h */,
+				F0A5783F15CF2AB300780115 /* MangaReadTests.m */,
+				F0A5783915CF2AB300780115 /* Supporting Files */,
+			);
+			path = MangaReadTests;
+			sourceTree = "<group>";
+		};
+		F0A5783915CF2AB300780115 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0A5783A15CF2AB300780115 /* MangaReadTests-Info.plist */,
+				F0A5783B15CF2AB300780115 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0A5780D15CF2AA800780115 /* MangaRead */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0A5784315CF2AB400780115 /* Build configuration list for PBXNativeTarget "MangaRead" */;
+			buildPhases = (
+				F0A5780A15CF2AA800780115 /* Sources */,
+				F0A5780B15CF2AA800780115 /* Frameworks */,
+				F0A5780C15CF2AA800780115 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MangaRead;
+			productName = MangaRead;
+			productReference = F0A5780E15CF2AA900780115 /* MangaRead.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0A5783115CF2AB300780115 /* MangaReadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0A5784615CF2AB400780115 /* Build configuration list for PBXNativeTarget "MangaReadTests" */;
+			buildPhases = (
+				F0A5782D15CF2AB300780115 /* Sources */,
+				F0A5782E15CF2AB300780115 /* Frameworks */,
+				F0A5782F15CF2AB300780115 /* Resources */,
+				F0A5783015CF2AB300780115 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0A5783715CF2AB300780115 /* PBXTargetDependency */,
+			);
+			name = MangaReadTests;
+			productName = MangaReadTests;
+			productReference = F0A5783215CF2AB300780115 /* MangaReadTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0A5780515CF2AA800780115 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "tracey eubanks";
+			};
+			buildConfigurationList = F0A5780815CF2AA800780115 /* Build configuration list for PBXProject "MangaRead" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F0A5780315CF2AA800780115;
+			productRefGroup = F0A5780F15CF2AA900780115 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0A5780D15CF2AA800780115 /* MangaRead */,
+				F0A5783115CF2AB300780115 /* MangaReadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0A5780C15CF2AA800780115 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A5781D15CF2AAB00780115 /* InfoPlist.strings in Resources */,
+				F0A5782315CF2AAC00780115 /* Credits.rtf in Resources */,
+				F0A5782915CF2AAD00780115 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A5782F15CF2AB300780115 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A5783D15CF2AB300780115 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F0A5783015CF2AB300780115 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0A5780A15CF2AA800780115 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A5781F15CF2AAB00780115 /* main.m in Sources */,
+				F0A5782615CF2AAC00780115 /* AppDelegate.m in Sources */,
+				F0A5782C15CF2AAE00780115 /* MangaRead.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A5782D15CF2AB300780115 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A5784015CF2AB300780115 /* MangaReadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0A5783715CF2AB300780115 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0A5780D15CF2AA800780115 /* MangaRead */;
+			targetProxy = F0A5783615CF2AB300780115 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0A5781B15CF2AAB00780115 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0A5781C15CF2AAB00780115 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F0A5782115CF2AAC00780115 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0A5782215CF2AAC00780115 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F0A5782715CF2AAD00780115 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0A5782815CF2AAD00780115 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F0A5783B15CF2AB300780115 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0A5783C15CF2AB300780115 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0A5784115CF2AB400780115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F0A5784215CF2AB400780115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F0A5784415CF2AB400780115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MangaRead/MangaRead-Prefix.pch";
+				INFOPLIST_FILE = "MangaRead/MangaRead-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F0A5784515CF2AB400780115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MangaRead/MangaRead-Prefix.pch";
+				INFOPLIST_FILE = "MangaRead/MangaRead-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F0A5784715CF2AB400780115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MangaRead.app/Contents/MacOS/MangaRead";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MangaRead/MangaRead-Prefix.pch";
+				INFOPLIST_FILE = "MangaReadTests/MangaReadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F0A5784815CF2AB400780115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MangaRead.app/Contents/MacOS/MangaRead";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MangaRead/MangaRead-Prefix.pch";
+				INFOPLIST_FILE = "MangaReadTests/MangaReadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0A5780815CF2AA800780115 /* Build configuration list for PBXProject "MangaRead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A5784115CF2AB400780115 /* Debug */,
+				F0A5784215CF2AB400780115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0A5784315CF2AB400780115 /* Build configuration list for PBXNativeTarget "MangaRead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A5784415CF2AB400780115 /* Debug */,
+				F0A5784515CF2AB400780115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F0A5784615CF2AB400780115 /* Build configuration list for PBXNativeTarget "MangaReadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A5784715CF2AB400780115 /* Debug */,
+				F0A5784815CF2AB400780115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F0A5782A15CF2AAE00780115 /* MangaRead.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F0A5782B15CF2AAE00780115 /* MangaRead.xcdatamodel */,
+			);
+			currentVersion = F0A5782B15CF2AAE00780115 /* MangaRead.xcdatamodel */;
+			path = MangaRead.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F0A5780515CF2AA800780115 /* Project object */;
+}
