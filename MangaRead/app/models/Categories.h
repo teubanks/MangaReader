@@ -14,14 +14,14 @@
 @interface Categories : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSSet *categoryTitle;
+@property (nonatomic, retain) NSSet *categoryTitles;
 @end
 
 @interface Categories (CoreDataGeneratedAccessors)
 
-- (void)addCategoryTitleObject:(Titles *)value;
-- (void)removeCategoryTitleObject:(Titles *)value;
-- (void)addCategoryTitle:(NSSet *)values;
-- (void)removeCategoryTitle:(NSSet *)values;
+- (void)addCategoryTitlesObject:(Titles *)value;
+- (void)removeCategoryTitlesObject:(Titles *)value;
+- (void)addCategoryTitles:(NSSet *)values;
+- (void)removeCategoryTitles:(NSSet *)values;
 
 @end

@@ -13,6 +13,6 @@
 @implementation Categories
 
 @dynamic name;
-@dynamic categoryTitle;
+@dynamic categoryTitles;
 
 @end

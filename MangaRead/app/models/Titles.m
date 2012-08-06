@@ -18,8 +18,8 @@
 @dynamic alias;
 @dynamic status;
 @dynamic titleDescription;
-@dynamic titleChapter;
-@dynamic titleCategory;
+@dynamic titleChapters;
+@dynamic titleCategories;
 @dynamic titleAuthors;
 
 @end

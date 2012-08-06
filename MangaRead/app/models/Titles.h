@@ -19,22 +19,22 @@
 @property (nonatomic, retain) NSString * alias;
 @property (nonatomic, retain) NSNumber * status;
 @property (nonatomic, retain) NSString * titleDescription;
-@property (nonatomic, retain) NSSet *titleChapter;
-@property (nonatomic, retain) NSSet *titleCategory;
+@property (nonatomic, retain) NSSet *titleChapters;
+@property (nonatomic, retain) NSSet *titleCategories;
 @property (nonatomic, retain) NSSet *titleAuthors;
 @end
 
 @interface Titles (CoreDataGeneratedAccessors)
 
-- (void)addTitleChapterObject:(NSManagedObject *)value;
-- (void)removeTitleChapterObject:(NSManagedObject *)value;
-- (void)addTitleChapter:(NSSet *)values;
-- (void)removeTitleChapter:(NSSet *)values;
+- (void)addTitleChaptersObject:(NSManagedObject *)value;
+- (void)removeTitleChaptersObject:(NSManagedObject *)value;
+- (void)addTitleChapters:(NSSet *)values;
+- (void)removeTitleChapters:(NSSet *)values;
 
-- (void)addTitleCategoryObject:(NSManagedObject *)value;
-- (void)removeTitleCategoryObject:(NSManagedObject *)value;
-- (void)addTitleCategory:(NSSet *)values;
-- (void)removeTitleCategory:(NSSet *)values;
+- (void)addTitleCategoriesObject:(NSManagedObject *)value;
+- (void)removeTitleCategoriesObject:(NSManagedObject *)value;
+- (void)addTitleCategories:(NSSet *)values;
+- (void)removeTitleCategories:(NSSet *)values;
 
 - (void)addTitleAuthorsObject:(NSManagedObject *)value;
 - (void)removeTitleAuthorsObject:(NSManagedObject *)value;
