@@ -12,5 +12,5 @@
 @interface MEParser : NSObject
 @property (nonatomic, retain) MEDataFetcher *fetcher;
 -(id)init;
--(NSDictionary *)parseMangaList;
+-(NSArray *)parseMangaList;
 @end

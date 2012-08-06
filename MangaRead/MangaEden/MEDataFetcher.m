@@ -18,12 +18,21 @@
   return(self);
 }
 
--(NSDictionary *)mangaList {
+-(NSDictionary *)fetchMangaList {
   NSString *urlPath = [self.APIURL stringByAppendingString:@"/list/0/"];
-  NSURL *listUrl = [[NSURL alloc] initWithString:urlPath];
-  NSData *listData = [[NSData alloc] initWithContentsOfURL:listUrl];
+  return [self runFetchRequest:urlPath];
+}
+
+-(NSDictionary *)fetchMangaTitle:(NSString *)titleID {
+  NSString *urlPath = [self.APIURL stringByAppendingFormat:@"/manga/%@/", titleID];
+  return [self runFetchRequest:urlPath];
+}
+
+-(NSDictionary *)runFetchRequest:(NSString *)urlPath {
+  NSURL *fetchURL = [[NSURL alloc] initWithString:urlPath];
+  NSData *fetchedData = [[NSData alloc] initWithContentsOfURL:fetchURL];
   NSError *error;
-  NSDictionary *parsedList =  [NSJSONSerialization JSONObjectWithData:listData options:NSJSONReadingAllowFragments error:&error];
-  return parsedList;
+  NSDictionary *parsedJSON = [NSJSONSerialization JSONObjectWithData:fetchedData options:NSJSONReadingAllowFragments error:&error];
+  return parsedJSON;
 }
 @end

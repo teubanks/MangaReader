@@ -11,5 +11,6 @@
 @interface MEDataFetcher : NSObject
 @property (atomic, readonly) NSString *APIURL;
 -(id)init;
--(NSDictionary *)mangaList;
+-(NSDictionary *)fetchMangaList;
+-(NSDictionary *)fetchMangaTitle:(NSString *)titleID;
 @end

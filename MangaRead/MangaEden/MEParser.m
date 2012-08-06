@@ -19,8 +19,21 @@
   return(self);
 }
 
--(NSDictionary *)parseMangaList {
-  NSDictionary *listDictionary = [self.fetcher mangaList];
-  return listDictionary;
+-(NSArray *)parseMangaList {
+  NSDictionary *mangaTitle;
+  NSDictionary *listDictionary = [self.fetcher fetchMangaList];
+  NSMutableArray *mangaItems = [[NSMutableArray alloc] init];
+  for (NSDictionary *mangaItem in [listDictionary objectForKey:@"manga"]) {
+    mangaTitle = [self.fetcher fetchMangaTitle:[mangaItem objectForKey:@"i"]];
+    NSMutableDictionary *parsedList = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
+                                       @"externalID",       [mangaItem objectForKey:@"i"],
+                                       @"mangaName",        [mangaItem objectForKey:@"t"],
+                                       @"alias",            [mangaItem objectForKey:@"a"],
+                                       @"status",           [mangaTitle objectForKey:@"status"],
+                                       @"titleDescription", [mangaTitle objectForKey:@"description"],
+                                       nil];
+    [mangaItems addObject:mangaItem];
+  }
+  return mangaItems;
 }
 @end
