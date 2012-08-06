@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		407C52B915D04B7D0096ED58 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 407C52B815D04B7D0096ED58 /* README */; };
 		F0A5781315CF2AAA00780115 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A5781215CF2AAA00780115 /* Cocoa.framework */; };
 		F0A5781D15CF2AAB00780115 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0A5781B15CF2AAB00780115 /* InfoPlist.strings */; };
 		F0A5781F15CF2AAB00780115 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5781E15CF2AAB00780115 /* main.m */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		407C52B815D04B7D0096ED58 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		F0A5780E15CF2AA900780115 /* MangaRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangaRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0A5781215CF2AAA00780115 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F0A5781515CF2AAA00780115 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -104,6 +106,7 @@
 				F0A5783815CF2AB300780115 /* MangaReadTests */,
 				F0A5781115CF2AA900780115 /* Frameworks */,
 				F0A5780F15CF2AA900780115 /* Products */,
+				407C52B815D04B7D0096ED58 /* README */,
 			);
 			sourceTree = "<group>";
 		};
@@ -316,6 +319,7 @@
 				F0A5781D15CF2AAB00780115 /* InfoPlist.strings in Resources */,
 				F0A5782315CF2AAC00780115 /* Credits.rtf in Resources */,
 				F0A5782915CF2AAD00780115 /* MainMenu.xib in Resources */,
+				407C52B915D04B7D0096ED58 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
