@@ -16,7 +16,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-  Parser *mangaEdenParser = [[Parser alloc] init];
+  MEParser *mangaEdenParser = [[MEParser alloc] init];
   [mangaEdenParser parseMangaList];
 }
 

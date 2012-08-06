@@ -18,13 +18,14 @@
 		F0A5783515CF2AB300780115 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A5781215CF2AAA00780115 /* Cocoa.framework */; };
 		F0A5783D15CF2AB300780115 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0A5783B15CF2AB300780115 /* InfoPlist.strings */; };
 		F0A5784015CF2AB300780115 /* MangaReadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5783F15CF2AB300780115 /* MangaReadTests.m */; };
-		F0A5784B15CF2B8800780115 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5784A15CF2B8800780115 /* Parser.m */; };
-		F0A5785015CF2C0E00780115 /* DataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5784F15CF2C0E00780115 /* DataFetcher.m */; };
+		F0A5784B15CF2B8800780115 /* MEParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5784A15CF2B8800780115 /* MEParser.m */; };
 		F0A5785315CF2EE600780115 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A5781715CF2AAA00780115 /* Foundation.framework */; };
-		F0A5785A15CF760600780115 /* Titles.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5785915CF760600780115 /* Titles.m */; };
-		F0A5785D15CF760600780115 /* Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5785C15CF760600780115 /* Categories.m */; };
-		F0A5786015CF760700780115 /* Chapters.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5785F15CF760700780115 /* Chapters.m */; };
-		F0A5786315CF760700780115 /* Authors.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5786215CF760700780115 /* Authors.m */; };
+		F0A5786E15CF76FC00780115 /* Authors.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5786715CF76FC00780115 /* Authors.m */; };
+		F0A5786F15CF76FC00780115 /* Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5786915CF76FC00780115 /* Categories.m */; };
+		F0A5787015CF76FC00780115 /* Chapters.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5786B15CF76FC00780115 /* Chapters.m */; };
+		F0A5787115CF76FC00780115 /* Titles.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5786D15CF76FC00780115 /* Titles.m */; };
+		F0A5787515CF775900780115 /* FeedProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5787415CF775900780115 /* FeedProcessor.m */; };
+		F0A5787815CF778A00780115 /* MEDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5787715CF778A00780115 /* MEDataFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,18 +59,20 @@
 		F0A5783C15CF2AB300780115 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F0A5783E15CF2AB300780115 /* MangaReadTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MangaReadTests.h; sourceTree = "<group>"; };
 		F0A5783F15CF2AB300780115 /* MangaReadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MangaReadTests.m; sourceTree = "<group>"; };
-		F0A5784915CF2B8800780115 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Parser.h; path = MangaRead/MangaEden/Parser.h; sourceTree = "<group>"; };
-		F0A5784A15CF2B8800780115 /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Parser.m; path = MangaRead/MangaEden/Parser.m; sourceTree = "<group>"; };
-		F0A5784E15CF2C0E00780115 /* DataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataFetcher.h; path = MangaEden/DataFetcher.h; sourceTree = "<group>"; };
-		F0A5784F15CF2C0E00780115 /* DataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataFetcher.m; path = MangaEden/DataFetcher.m; sourceTree = "<group>"; };
-		F0A5785815CF760600780115 /* Titles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Titles.h; path = db/Titles.h; sourceTree = "<group>"; };
-		F0A5785915CF760600780115 /* Titles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Titles.m; path = db/Titles.m; sourceTree = "<group>"; };
-		F0A5785B15CF760600780115 /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Categories.h; path = db/Categories.h; sourceTree = "<group>"; };
-		F0A5785C15CF760600780115 /* Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Categories.m; path = db/Categories.m; sourceTree = "<group>"; };
-		F0A5785E15CF760700780115 /* Chapters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapters.h; path = db/Chapters.h; sourceTree = "<group>"; };
-		F0A5785F15CF760700780115 /* Chapters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Chapters.m; path = db/Chapters.m; sourceTree = "<group>"; };
-		F0A5786115CF760700780115 /* Authors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Authors.h; path = db/Authors.h; sourceTree = "<group>"; };
-		F0A5786215CF760700780115 /* Authors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Authors.m; path = db/Authors.m; sourceTree = "<group>"; };
+		F0A5784915CF2B8800780115 /* MEParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEParser.h; path = MangaRead/MangaEden/MEParser.h; sourceTree = "<group>"; };
+		F0A5784A15CF2B8800780115 /* MEParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MEParser.m; path = MangaRead/MangaEden/MEParser.m; sourceTree = "<group>"; };
+		F0A5786615CF76FC00780115 /* Authors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Authors.h; path = app/models/Authors.h; sourceTree = "<group>"; };
+		F0A5786715CF76FC00780115 /* Authors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Authors.m; path = app/models/Authors.m; sourceTree = "<group>"; };
+		F0A5786815CF76FC00780115 /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Categories.h; path = app/models/Categories.h; sourceTree = "<group>"; };
+		F0A5786915CF76FC00780115 /* Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Categories.m; path = app/models/Categories.m; sourceTree = "<group>"; };
+		F0A5786A15CF76FC00780115 /* Chapters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapters.h; path = app/models/Chapters.h; sourceTree = "<group>"; };
+		F0A5786B15CF76FC00780115 /* Chapters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Chapters.m; path = app/models/Chapters.m; sourceTree = "<group>"; };
+		F0A5786C15CF76FC00780115 /* Titles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Titles.h; path = app/models/Titles.h; sourceTree = "<group>"; };
+		F0A5786D15CF76FC00780115 /* Titles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Titles.m; path = app/models/Titles.m; sourceTree = "<group>"; };
+		F0A5787315CF775900780115 /* FeedProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedProcessor.h; sourceTree = "<group>"; };
+		F0A5787415CF775900780115 /* FeedProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedProcessor.m; sourceTree = "<group>"; };
+		F0A5787615CF778A00780115 /* MEDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEDataFetcher.h; path = MangaRead/MangaEden/MEDataFetcher.h; sourceTree = "<group>"; };
+		F0A5787715CF778A00780115 /* MEDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MEDataFetcher.m; path = MangaRead/MangaEden/MEDataFetcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +139,9 @@
 		F0A5781815CF2AAA00780115 /* MangaRead */ = {
 			isa = PBXGroup;
 			children = (
+				F0A5786515CF76CF00780115 /* app */,
 				F0A5785715CF73C300780115 /* db */,
+				F0A5787215CF773600780115 /* lib */,
 				F0A5784D15CF2BB300780115 /* Feeds */,
 				F0A5782415CF2AAC00780115 /* AppDelegate.h */,
 				F0A5782515CF2AAC00780115 /* AppDelegate.m */,
@@ -180,10 +185,10 @@
 		F0A5784C15CF2B9400780115 /* MangaEden */ = {
 			isa = PBXGroup;
 			children = (
-				F0A5784915CF2B8800780115 /* Parser.h */,
-				F0A5784A15CF2B8800780115 /* Parser.m */,
-				F0A5784E15CF2C0E00780115 /* DataFetcher.h */,
-				F0A5784F15CF2C0E00780115 /* DataFetcher.m */,
+				F0A5787615CF778A00780115 /* MEDataFetcher.h */,
+				F0A5787715CF778A00780115 /* MEDataFetcher.m */,
+				F0A5784915CF2B8800780115 /* MEParser.h */,
+				F0A5784A15CF2B8800780115 /* MEParser.m */,
 			);
 			name = MangaEden;
 			path = ..;
@@ -201,16 +206,40 @@
 			isa = PBXGroup;
 			children = (
 				F0A5782A15CF2AAE00780115 /* MangaRead.xcdatamodeld */,
-				F0A5785815CF760600780115 /* Titles.h */,
-				F0A5785915CF760600780115 /* Titles.m */,
-				F0A5786115CF760700780115 /* Authors.h */,
-				F0A5786215CF760700780115 /* Authors.m */,
-				F0A5785E15CF760700780115 /* Chapters.h */,
-				F0A5785F15CF760700780115 /* Chapters.m */,
-				F0A5785B15CF760600780115 /* Categories.h */,
-				F0A5785C15CF760600780115 /* Categories.m */,
 			);
 			name = db;
+			sourceTree = "<group>";
+		};
+		F0A5786415CF766E00780115 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				F0A5786615CF76FC00780115 /* Authors.h */,
+				F0A5786715CF76FC00780115 /* Authors.m */,
+				F0A5786815CF76FC00780115 /* Categories.h */,
+				F0A5786915CF76FC00780115 /* Categories.m */,
+				F0A5786A15CF76FC00780115 /* Chapters.h */,
+				F0A5786B15CF76FC00780115 /* Chapters.m */,
+				F0A5786C15CF76FC00780115 /* Titles.h */,
+				F0A5786D15CF76FC00780115 /* Titles.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		F0A5786515CF76CF00780115 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				F0A5786415CF766E00780115 /* models */,
+			);
+			name = app;
+			sourceTree = "<group>";
+		};
+		F0A5787215CF773600780115 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F0A5787315CF775900780115 /* FeedProcessor.h */,
+				F0A5787415CF775900780115 /* FeedProcessor.m */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,12 +353,13 @@
 				F0A5781F15CF2AAB00780115 /* main.m in Sources */,
 				F0A5782615CF2AAC00780115 /* AppDelegate.m in Sources */,
 				F0A5782C15CF2AAE00780115 /* MangaRead.xcdatamodeld in Sources */,
-				F0A5784B15CF2B8800780115 /* Parser.m in Sources */,
-				F0A5785015CF2C0E00780115 /* DataFetcher.m in Sources */,
-				F0A5785A15CF760600780115 /* Titles.m in Sources */,
-				F0A5785D15CF760600780115 /* Categories.m in Sources */,
-				F0A5786015CF760700780115 /* Chapters.m in Sources */,
-				F0A5786315CF760700780115 /* Authors.m in Sources */,
+				F0A5784B15CF2B8800780115 /* MEParser.m in Sources */,
+				F0A5786E15CF76FC00780115 /* Authors.m in Sources */,
+				F0A5786F15CF76FC00780115 /* Categories.m in Sources */,
+				F0A5787015CF76FC00780115 /* Chapters.m in Sources */,
+				F0A5787115CF76FC00780115 /* Titles.m in Sources */,
+				F0A5787515CF775900780115 /* FeedProcessor.m in Sources */,
+				F0A5787815CF778A00780115 /* MEDataFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,15 +6,15 @@
 //  Copyright (c) 2012 tracey eubanks. All rights reserved.
 //
 
-#import "Parser.h"
+#import "MEParser.h"
 
-@implementation Parser
+@implementation MEParser
 @synthesize fetcher = _fetcher;
 
 -(id)init {
   self = [super init];
   if(self) {
-    _fetcher = [[DataFetcher alloc] init];
+    _fetcher = [[MEDataFetcher alloc] init];
   }
   return(self);
 }

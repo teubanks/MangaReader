@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 tracey eubanks. All rights reserved.
 //
 
-#import "DataFetcher.h"
+#import "MEDataFetcher.h"
 
-@implementation DataFetcher
+@implementation MEDataFetcher
 
 @synthesize APIURL = _APIURL;
 -(id)init {

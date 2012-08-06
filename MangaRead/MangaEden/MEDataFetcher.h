@@ -1,5 +1,5 @@
 //
-//  Parser.h
+//  DataFetcher.h
 //  MangaRead
 //
 //  Created by tracey eubanks on 8/5/12.
@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DataFetcher.h"
 
-@interface Parser : NSObject
-@property (nonatomic, retain) DataFetcher *fetcher;
+@interface MEDataFetcher : NSObject
+@property (atomic, readonly) NSString *APIURL;
 -(id)init;
--(NSDictionary *)parseMangaList;
+-(NSDictionary *)mangaList;
 @end
