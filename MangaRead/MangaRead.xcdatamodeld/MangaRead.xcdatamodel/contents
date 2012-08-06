@@ -1,4 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="untitled.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1487" systemVersion="12A269" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Authors" representedClassName="Authors" syncable="YES">
+        <attribute name="authorName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="authorTitles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Titles" inverseName="titleAuthors" inverseEntity="Titles" syncable="YES"/>
+    </entity>
+    <entity name="Categories" representedClassName="Categories" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="categoryTitle" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Titles" inverseName="titleCategory" inverseEntity="Titles" syncable="YES"/>
+    </entity>
+    <entity name="Chapters" representedClassName="Chapters" parentEntity="Titles" syncable="YES">
+        <attribute name="chapterName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateUploaded" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="externalId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="chapterTitle" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Titles" inverseName="titleChapter" inverseEntity="Titles" syncable="YES"/>
+    </entity>
+    <entity name="Titles" representedClassName="Titles" syncable="YES">
+        <attribute name="alias" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="externalID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mangaName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="releaseDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="thumbnail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titleDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="titleAuthors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Authors" inverseName="authorTitles" inverseEntity="Authors" syncable="YES"/>
+        <relationship name="titleCategory" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Categories" inverseName="categoryTitle" inverseEntity="Categories" syncable="YES"/>
+        <relationship name="titleChapter" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Chapters" inverseName="chapterTitle" inverseEntity="Chapters" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Titles" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Chapters" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Categories" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Authors" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
 </model>
