@@ -474,6 +474,7 @@
 				GCC_PREFIX_HEADER = "MangaRead/MangaRead-Prefix.pch";
 				INFOPLIST_FILE = "MangaRead/MangaRead-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -486,6 +487,7 @@
 				GCC_PREFIX_HEADER = "MangaRead/MangaRead-Prefix.pch";
 				INFOPLIST_FILE = "MangaRead/MangaRead-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -539,6 +541,7 @@
 				F0A5784515CF2AB400780115 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0A5784615CF2AB400780115 /* Build configuration list for PBXNativeTarget "MangaReadTests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +550,7 @@
 				F0A5784815CF2AB400780115 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
